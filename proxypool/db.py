@@ -32,7 +32,9 @@ class RedisClient(object):
         :return: 添加结果
         """
         if not self.db.zscore(REDIS_KEY, proxy):  # 返回有序集合中, 成员的分数值
-            return self.db.zadd(REDIS_KEY, score, proxy)
+            # return self.db.zadd(REDIS_KEY, score, proxy)
+            # 更新为redis3.0+版本，解决redis3.0更新后的报错，如用旧版本还原上方代码
+            return self.db.zadd(REDIS_KEY, {proxy:score})
 
     def random(self):
         """
