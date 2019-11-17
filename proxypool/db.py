@@ -1,17 +1,24 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import redis
+import os
+from random import choice
+from dotenv import load_dotenv, find_dotenv
+load_dotenv(find_dotenv())
+
+envget = os.environ.get
+
+from proxypool.error import PoolEmptyError
+
 MAX_SCORE = 100
 MIN_SCORE = 0
 INITIAL_SCORE = 10
-REDIS_HOST = 'localhost'
-REDIS_PASSWORD = 'password'
+REDIS_HOST = envget('REDIS_HOST')
+REDIS_PASSWORD = envget('REDIS_PASSWORD')
 REDIS_PORT = 6379
 REDIS_KEY = 'proxies'
 
-import redis
-from random import choice
 
-from proxypool.error import PoolEmptyError
 
 class RedisClient(object):
 
