@@ -20,4 +20,4 @@ pip install -r requirements.txt
 python run.py
 ```
 #### 4. 效果
-<img src="http://mingyang920.com/blog/img/Snipaste_2019-11-17_21-32-52.png"/>
+<img src="http://mingyang920.com/blog/img/Snipaste_2019-11-17_21-50-41.png"/>
