@@ -4,7 +4,7 @@ Proxy Pool
 
 ##### 1. 克隆项目
 ```
-git clone git@github.com:Alex-blip/ProxyPool.git
+git clone https://github.com/Lanminy/ProxyPool.git
 ```
 
 #### 2. 安装环境
