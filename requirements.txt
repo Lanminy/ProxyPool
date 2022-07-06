@@ -19,7 +19,7 @@ ipython-genutils==0.2.0
 itsdangerous==1.1.0
 jedi==0.15.1
 Jinja2==2.10.3
-lxml==4.6.3
+lxml==4.9.1
 MarkupSafe==1.1.1
 multidict==4.5.2
 parso==0.5.1
