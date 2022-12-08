@@ -5,7 +5,7 @@ attrs==19.3.0
 backcall==0.1.0
 beautifulsoup4==4.8.0
 bs4==0.0.1
-certifi==2019.6.16
+certifi==2022.12.7
 chardet==3.0.4
 Click==7.0
 cssselect==1.1.0
